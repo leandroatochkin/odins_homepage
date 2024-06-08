@@ -145,7 +145,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     html {
       height: 100%;
-      max-width: 768px !important;
+      max-width: 1023px !important;
     }
   
     body {
@@ -159,16 +159,16 @@
   
     .intro {
       background-color: darkslategray;
-      width: 100vw;
-      height: 20vh;
+      width: 100%;
+      height: 30vh;
       transform: rotate(-25deg) scaleY(400%) scaleX(300%);
       box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
     }
   
     .bio-container {
       
-      height: 40vh;
-      width: 80vw;
+      height: 80%;
+      width: 80%;
       background-color: transparent;
       position: absolute;
       top: 5%;
@@ -200,7 +200,7 @@
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
       bottom: 0;
       font-family: var(--title-font);
-      font-size: 56px;
+      font-size: 40px;
       top: 5%;
       right: -80%;
     }
@@ -229,7 +229,7 @@
 
     .break-text-2{
         position: absolute;
-        bottom: 2%;
+        bottom: 10%;
     }
     .bio-text > h1{
         font-family: var(--title-font);
@@ -244,7 +244,7 @@
     }
   
     .projects {
-      margin-top: 60vh;
+      margin-top: 100vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 90vw;
@@ -294,6 +294,13 @@
       padding-top: 2%;
     }
 
+    .p-title{
+        font-family: var(--title-font);
+    }
+
+    .p-description{
+        font-family: var(--text-font);
+    }
     .icon-small{
         font-size: 25px;
     }
@@ -312,12 +319,13 @@
   
     footer {
       margin-top: 25%;
-      height: 50vh;
+      height: 75vh;
       width: 100vw;
       background-color: darkslategray;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 0;
     }
   
     .contact-info {
@@ -331,6 +339,32 @@
       background: url('./picture2.jpg');
       background-size: cover;
       background-position: 30%;
+    }
+
+    .footer-title{
+        font-family: var(--title-font);
+        color: white;
+    }
+
+    .footer-p{
+        font-family: var(--text-font);
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icon-container{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .icon-large{
+        font-size: 50px;
+    }
+
+    .icon-small{
+        font-size: 25px;
     }
   }
   
